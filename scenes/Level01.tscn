@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://bq2byuc65y4yp"]
+
+[ext_resource type="PackedScene" uid="uid://c42yil10jadi4" path="res://scenes/Player.tscn" id="1_4e331"]
+[ext_resource type="Script" uid="uid://dgplrw4qgo7o7" path="res://scenes/echo_controller.gd" id="2_0idui"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0idui"]
+size = Vector2(420, 46)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qnryt"]
+size = Vector2(196, 42)
+
+[node name="Level01" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_4e331")]
+position = Vector2(68, 63)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(9, 34)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(199, 145)
+shape = SubResource("RectangleShape2D_0idui")
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D"]
+offset_left = -6.0
+offset_top = 121.0
+offset_right = 403.0
+offset_bottom = 165.0
+
+[node name="EchoPlatform" type="StaticBody2D" parent="." groups=["echo_hidden"]]
+position = Vector2(86, -67)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EchoPlatform"]
+position = Vector2(458, 241)
+shape = SubResource("RectangleShape2D_qnryt")
+disabled = true
+
+[node name="ColorRect" type="ColorRect" parent="EchoPlatform"]
+visible = false
+offset_left = 360.0
+offset_top = 219.0
+offset_right = 553.0
+offset_bottom = 261.0
+color = Color(0.12941177, 1, 1, 1)
+
+[node name="EchoController" type="Node" parent="."]
+script = ExtResource("2_0idui")
