@@ -1,13 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://bq2byuc65y4yp"]
+[gd_scene load_steps=7 format=3 uid="uid://bq2byuc65y4yp"]
 
 [ext_resource type="PackedScene" uid="uid://c42yil10jadi4" path="res://scenes/Player.tscn" id="1_4e331"]
 [ext_resource type="Script" uid="uid://dgplrw4qgo7o7" path="res://scenes/echo_controller.gd" id="2_0idui"]
+[ext_resource type="Script" uid="uid://b081ksv5se5pg" path="res://scenes/goal_area.gd" id="3_qnryt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0idui"]
 size = Vector2(420, 46)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qnryt"]
 size = Vector2(196, 42)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q43x7"]
+size = Vector2(239, 37)
 
 [node name="Level01" type="Node2D"]
 
@@ -33,7 +37,7 @@ offset_bottom = 165.0
 position = Vector2(86, -67)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EchoPlatform"]
-position = Vector2(458, 241)
+position = Vector2(484, 241)
 shape = SubResource("RectangleShape2D_qnryt")
 disabled = true
 
@@ -47,3 +51,16 @@ color = Color(0.12941177, 1, 1, 1)
 
 [node name="EchoController" type="Node" parent="."]
 script = ExtResource("2_0idui")
+
+[node name="GoalArea" type="Area2D" parent="."]
+script = ExtResource("3_qnryt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GoalArea"]
+position = Vector2(871, 170)
+shape = SubResource("RectangleShape2D_q43x7")
+
+[node name="ColorRect" type="ColorRect" parent="GoalArea"]
+offset_left = 755.0
+offset_top = 153.0
+offset_right = 992.0
+offset_bottom = 187.0
