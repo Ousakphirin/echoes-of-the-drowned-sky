@@ -33,7 +33,7 @@ The purpose of this version is mainly to demonstrate the gameplay mechanic rathe
 
 ![Tutorial](docs/screenshots/Tutorial_and_gamestart.png)
 
-![Level Overview](docs/screenshots/level_overview.png)
+![Level Overview](docs/screenshots/Level_overview.png)
 
 ![Echo Mechanic](docs/screenshots/echo_mechanic.png)
 
