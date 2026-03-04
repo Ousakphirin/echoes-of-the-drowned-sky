@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6ucislihytjs"]
+
+[ext_resource type="PackedScene" uid="uid://bk5pquo6fvmeg" path="res://scenes/Echo_platform.tscn" id="1_nwpye"]
+
+[node name="EchoPlatform" instance=ExtResource("1_nwpye")]
+
+[node name="ColorRect" parent="." index="1"]
+offset_left = 1.0056291
+offset_top = 22.99976
+offset_bottom = 56.026188

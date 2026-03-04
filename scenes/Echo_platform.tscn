@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bk5pquo6fvmeg"]
+
+[ext_resource type="Texture2D" uid="uid://ck1h1b1pc886m" path="res://assets/oak_woods_v1.0/oak_woods_v1.0/decorations/rock_3.png" id="1_oye2w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qnryt"]
+size = Vector2(71.06053, 12.654233)
+
+[node name="EchoPlatform" type="StaticBody2D" groups=["echo_hidden"]]
+position = Vector2(68, 38.999996)
+rotation = 0.00024488056
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(47.471184, 45.69819)
+rotation = 0.0105364
+shape = SubResource("RectangleShape2D_qnryt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(45.009064, 36.988983)
+scale = Vector2(1.7677367, 1.6055903)
+texture = ExtResource("1_oye2w")
