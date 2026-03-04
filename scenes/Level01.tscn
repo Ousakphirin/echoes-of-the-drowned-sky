@@ -8253,17 +8253,19 @@ position = Vector2(25, 138)
 custom_minimum_size = Vector2(0, 80)
 anchors_preset = 10
 anchor_right = 1.0
-offset_left = 47.0
-offset_top = 3.0
-offset_right = 76.0
-offset_bottom = 83.0
+offset_left = 16.0
+offset_top = 32.0
+offset_right = 45.0
+offset_bottom = 112.0
 grow_horizontal = 2
 script = ExtResource("23_gb46d")
 
 [node name="Label" type="Label" parent="UI/TutorialPanel"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 38.0
+offset_top = 26.0
+offset_right = 373.0
+offset_bottom = 49.0
 text = "[A] Move   [D] Move   [Space] Jump   [E] Echo"
 
 [connection signal="pressed" from="WinScreen/Panel/VBoxContainer/RestartButton" to="WinScreen" method="_on_restart_button_pressed"]
