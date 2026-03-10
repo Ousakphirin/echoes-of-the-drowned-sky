@@ -1,71 +1,54 @@
-# Echoes of the Drowned Sky
+# Echoes of the Drowned Sky (Beta Version)
 
-Echoes of the Drowned Sky is a small 2D platformer developed using the Godot Engine.
+## Project Description
 
-The main gameplay idea is an **Echo ability** that allows the player to create temporary platforms in mid-air in order to cross gaps and reach higher areas.
+Echoes of the Drowned Sky is a 2D platformer game developed using the Godot Engine.
+The player explores a dark environment where special **Echo abilities** temporarily reveal hidden platforms that allow the player to progress through each level.
 
-This repository contains the **alpha version** of the project which demonstrates the core gameplay mechanic and a simple playable level.
+The goal of the game is to navigate through dangerous terrain, avoid falling into kill zones, and reach the goal flag to complete each level.
 
+
+## Game Features
+
+* Echo mechanic that reveals hidden platforms
+* Three playable levels
+* Sound effects for walking, jumping, echo activation, and victory
+* Main menu and level selection system
+* Win screen with restart and return to main menu options
 
 ## Controls
 
-A / D – Move left and right  
-Space – Jump  
-E – Create Echo platform
+Move Left: **A / Left Arrow**
+Move Right: **D / Right Arrow**
+Jump: **Space**
+Echo Ability: **E**
 
+## Beta Gameplay Video
 
-## Current Features (Alpha)
+https://youtu.be/Sqxdf4EI1CE
 
-The current alpha version includes the following systems:
+## Beta Release
 
-- Basic player movement
-- Jump mechanic
-- Echo platform ability
-- A simple Level 1 layout
-- Kill zone that resets the player when falling
-- Win condition using a goal flag
-- Small tutorial UI showing the controls
+Download the beta version here:
 
-The purpose of this version is mainly to demonstrate the gameplay mechanic rather than a finished game.
+https://github.com/Ousakphirin/echoes-of-the-drowned-sky/releases/tag/beta-v1.0
 
+## Beta Testing
 
-## Gameplay Screenshots
+Beta testing was conducted with **five testers**.
 
-![Tutorial](docs/screenshots/Tutorial_and_gamestart.png)
+* **3 Computer Science senior students**
+* **2 testers outside the CS program**
 
-![Level Overview](docs/screenshots/Level_overview.png)
+Feedback was collected using **Google Forms**, and the responses were automatically stored in a **Google Sheets spreadsheet** for evaluation.
 
-![Echo Mechanic](docs/screenshots/echo_mechanic.png)
+The feedback helped identify gameplay balance, usability issues, and suggestions for improvement.
 
-![Win Screen](docs/screenshots/win_screen.png)
+## AI Usage Disclosure
 
+AI tools were used to assist with debugging code, improving script structure, and helping with documentation preparation.
+All final code implementation, testing, and gameplay design decisions were reviewed and implemented by the developer.
 
-## Gameplay Video
+## Developer
 
-YouTube gameplay video:
-
-https://youtu.be/KQkmG7EHj68
-
-## Development Notes
-
-The project was developed using **Godot Engine 4** and written mainly in **GDScript**.
-
-The focus of the alpha stage was implementing the core mechanic and ensuring the gameplay loop works correctly.
-
-Future development may include:
-- additional levels
-- improved visual effects
-- sound effects and music
-- more advanced platform mechanics
-
----
-
-## AI Usage
-
-An AI assistant (ChatGPT) was occasionally used during development as a support tool for:
-
-- explaining some Godot features
-- debugging small scripting issues
-- clarifying Git and project setup questions
-
-All gameplay design decisions and implementation were completed by the developer.
+Ousakphirin Phat
